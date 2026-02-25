@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riuam スタッフ募集</title>
+  
+  <!-- タブアイコン（同じフォルダ内の icon.png を使用） -->
+  <link rel="icon" type="image/png" href="./icon.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --text: #c9d1d9;
+      --text-dim: #8b949e;
+      --accent: #58a6ff;
+      --border: #30363d;
+      --divider: #21262d;
+      --highlight: #3fb950;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      line-height: 1.65;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin: 3rem 0 4rem;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      background: linear-gradient(90deg, #79c0ff, #d2a8ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.4rem;
+    }
+
+    .header-line {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #30363d, transparent);
+      margin: 1.5rem auto;
+      max-width: 400px;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.8rem 2rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .section-title {
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: #e6edf3;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    pre, .content {
+      white-space: pre-wrap;
+      font-family: inherit;
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .content strong {
+      color: #f0f6fc;
+      font-weight: 600;
+    }
+
+    .highlight {
+      color: var(--highlight);
+      font-weight: 500;
+    }
+
+    .contact-box {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 2.2rem;
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+
+    .contact-title {
+      font-size: 1.6rem;
+      margin-bottom: 1.4rem;
+      color: #58a6ff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #238636;
+      color: white;
+      font-weight: 600;
+      padding: 0.9rem 2.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 0.8rem 0.6rem;
+      transition: 0.2s;
+      font-size: 1.05rem;
+    }
+
+    .btn.discord {
+      background: #5865f2;
+    }
+
+    .btn:hover {
+      filter: brightness(1.15);
+      transform: translateY(-1px);
+    }
+
+    .id-box {
+      font-family: 'JetBrains Mono', monospace;
+      background: #0950b4;
+      padding: 0.8rem 1.4rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 1.2rem 0;
+      border: 1px solid #0950b4;
+      font-size: 1.1rem;
+    }
+
+    .note {
+      color: var(--text-dim);
+      font-size: 0.92rem;
+      text-align: center;
+      margin-top: 2.5rem;
+      line-height: 1.8;
+    }
+
+    hr.divider {
+      border: none;
+      height: 1px;
+      background: var(--divider);
+      margin: 2.8rem 0;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2.3rem; }
+      .section { padding: 1.4rem 1.2rem; }
+      .btn { padding: 0.8rem 1.6rem; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Riuam スタッフ募集</h1>
+    <div class="header-line"></div>
+    <p style="color:#8b949e; font-size:1.1rem;">マルチプロジェクト組織、あなたも一緒に創ってみませんか？？</p>
+  </header>
+
+  <div class="section">
+    <div class="section-title">現在進行中のプロジェクト</div>
+    <div class="content">
+統合型プロジェクト（開発・運営・創作・構想）を進めています。
+一緒に関わってくれる仲間を募集しています！
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">条件</div>
+    <div class="content">
+・年齢：小学生～中学生（最低：小学5年生～最高：高校一年生）
+・子供過ぎない人（性格などが）
+・プログラミング知識：あれば嬉しい / 無くてもOK
+・空気が読める人 / 接し方が上手な人
+・まじめすぎない人
+・時間がある人（任意・役割による）
+
+※ 年齢以外任意です。
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">必須環境</div>
+    <div class="content">
+▼ デバイス
+・PC または iPhone（どちらか必須）
+
+▼ 連絡ツール
+・Discord (必須)
+・LINE（任意）
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">スタッフ参加方法</div>
+    <div class="content">
+・小型面接（簡易面談）あり
+・共有情報：
+  - 生年月日・年齢・本名（任意）
+  - 利用規約の確認
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">役割例（権限順）</div>
+    <div class="content">
+・最高権限指導者（Riuamを建てた人(Nox [定期] ) ）
+最高指導者、Nox（のくす）という人が最高権限指導者です。全スタッフと運営を指導し、荒らし防止対策などを足したり、全権限の所有者、もしくはRiuamの製作者です。
+
+・運営（月払い：6,000円　永久：92,000円）
+ほぼフル権限。
+ただし、スタッフに入るための利用規約とは別の提示された運営版利用規約には従いましょう。
+
+・開発（月払い150円　永久1700円）
+最高権限指導者から採用された企画、構想、設計が提示されるため、それをもとに、全体的なゲームやアプリなどの制作を行う人（最終的には最高権限指導者に確認してもらい、OKがでたらソースコードがまとまったフォルダまたはUnityやエンジン系で制作されたゲームは、完成したファイルとタイトル.txt、詳細内容.txt、ヘルプ.txt、利用規約.txt、サムネイル.png（複数のサムネイルの場合は「１」や「２」をつけて保存）が入った完結フォルダを渡してもらい、最高権限指導者が公開する形で、サーバーやVPSなどは予算がなかったら無料のものを使用。予算を出してくれるという人がいたら（給料20%アップ）それを使用。）
+
+・設計（月払い150円　永久1700円）
+提示された構想を基にした設計提示者。最高権限指導者に提示された構想をもとにして設計し、再び最高権限指導者に提示して確認を得てもらう人。
+
+・構想（月払い150円　永久1700円）
+ものごとの全体としての内容、それを実現するための方法などについて、考えをめぐらし組み立てる人。
+
+・企画（月払い150円　永久1700円） 課題を解決するためのアイデア、企画をざっと立案し、それを最高権限指導者に見せて提案する人。（例：ゲームの場合はタイトルや利用規約、サムネイル、ジャンル、その他などを決めてもらい、SNSの投稿や宣伝などの場合はタイトルと詳細内容、サムネイルなど）
+
+・提案、バグ報告、規約違反の報告や宣伝など（無料の定番スタッフ）
+より良くするための機能追加や改善のアイデアや、正常に動作しない不具合の状況と再現手順の伝達、ルールを破る迷惑行為や不正行為の申告などといった報告や提案を提示する人。
+また、企画提示者に考察してもらったタイトルと詳細内容から、宣伝動画を制作し、様々なSNSや掲示板にアップして宣伝する役割を果たす人。
+
+・多少のヘルプ対応（無料）
+ すぐ済ませられる・楽で小さなトラブルなどといった種類に該当する多少のヘルプの対応を行う人。
+条件も少なめで活動することができ、対応する種類が少ないため、「時間の余った時などについでにやっておきたい」くらいの勢いで活動したかったらこれがおすすめ
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-title">給料・報酬整理</div>
+    <div class="content">
+《基本原則》
+・作業・投稿・制作の成果に応じて報酬を計算
+・定期給料はなし
+・無料枠もポイント化して報酬換算（投稿・宣伝・改善案など）
+
+■ 有料役職（報酬あり）
+（以下表形式の部分は原文のままテキストで再現）
+
+役職 | 計算例
+運営 | 月間作業量 × 1作業 = 6000円相当 / 永久報酬 = 総貢献度 × 権限係数
+開発 | 総利益 × 個人貢献度（例：1000円 × 20% = 200円）
+設計 | 総利益 × 個人貢献度
+構想 | 総利益 × 個人貢献度
+企画 | 総利益 × 個人貢献度
+※ボーナス | 予算提供 → 報酬20%アップ / 優秀成果物提出 → 小ボーナス付与
+
+■ 無料役職（ポイント換算）
+提案・報告・宣伝 | 投稿1本 = 10円 / バズ1本 = 50円 / 改善案採用 = 20円
+多少のヘルプ対応 | 対応1件 = 3円 / 作業量で自動算出
+
+《実例：じゃんけんゲーム》
+（表部分もテキストでそのまま）
+
+参加メンバー | 役割 | 貢献度 | 計算例
+Aさん | 企画 | 30% | 1000 × 0.3 = 300円
+Bさん | 開発 | 40% | 1000 × 0.4 = 400円
+Cさん | 設計 | 30% | 1000 × 0.3 = 300円
+Dさん | 宣伝（無料枠） | 3投稿+1バズ | 3×10 + 1×50 = 80円
+Eさん | 宣伝（無料枠） | 2投稿 | 2×10 = 20円
+
+《ポイント・計算ルール》
+・成果物報酬 → 完成物・公開物の利益 × 貢献度
+・投稿・宣伝 → 投稿本数 × 定額 + バズ本数 × 高額
+・改善提案報酬 → 採用案 × 定額
+・サポート報酬 → 対応件数 × 定額
+※権限や難易度によって倍率を掛けることも可能（例：運営×1.5、開発×1.2）
+
+《メリット》
+・定期給料不要、作った分だけ公平に報酬
+・無料役職も参加・努力次第で報酬化
+・透明性が高く、簡単に計算可能
+・誰が何をどれくらいやったか一目で把握可能
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <div class="contact-title">参加方法</div>
+    <p style="margin-bottom:1.6rem; font-size:1.1rem;">興味ある人は連絡👇</p>
+    
+    <a href="https://line.me/ti/p/BREtpAS3us" class="btn" target="_blank">LINEで連絡</a>
+
+    <div class="id-box">Discord ID：nox_b4n5</div>
+    
+    <p style="margin-top:1.8rem; color:#8b949e;">
+      ※ 小型面接後、スタッフ参加の可否を決定
+    </p>
+  </div>
+
+  <div class="note">
+    まずは気軽にご連絡ください！<br>
+    一緒に面白いものを作りましょう。
+  </div>
+
+</div>
+
+</body>
+</html>
